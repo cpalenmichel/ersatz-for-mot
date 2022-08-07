@@ -12,6 +12,12 @@ import re
 # U+2026 ...  Po  Ellipsis
 # U+30FB 
 # U+002A *
+# U+0F0D །        TIBETAN MARK SHAD
+# U+0F0E ༎        TIBETAN MARK NYIS SHAD
+# U+002a *        ASTERISK
+# U+0049 I        LATIN CAPITAL I (used in Bengali as DEVANAGARI DANDA)
+# U+003a :        COLON (second most common in Georgian)
+# U+061F  ؟       ARABIC QUESTION MARK
 
 # other acceptable punctuation
 # U+3011  】  Pe  RIGHT BLACK LENTICULAR BRACKET
@@ -25,6 +31,7 @@ import re
 # U+0027  '   Po  APOSTROPHE
 # U+2019  ’   Pf  RIGHT SINGLE QUOTATION MARK
 # U+0029  )   Pe  RIGHT PARENTHESIS
+# U+FF09  ）      FULL WIDTH RIGHT PARENTHESIS
 
 ending_punc = {
     '\u0964',
@@ -38,6 +45,12 @@ ending_punc = {
     '\uFF61',
     '\uFF0E',
     '\u2026',
+    '\u0f0d',
+    '\u0f0e',
+    '\u002a',
+    '\u0049',
+    '\u003a',
+    '\u061F'
 }
 
 closing_punc = {
