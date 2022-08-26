@@ -216,7 +216,152 @@ MODELS = {
         "destination": "multilingual/wmtlangs/01.Jun.21.multilingual",
         "date": "01 June 2021",
         "md5" : "2d7d2092800cecda2b88f9da9fffbfff"
-    }
+    },
+    # Custom Models
+    "aze" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/aze.checkpoint.model.gz",
+        "info" : "A Azerbaijani monolingual model trained on MOT data",
+        "description" : "monolingual-aze",
+        "destination" : "monolingual/aze/24.Aug.22.aze",
+        "date" : "24 August 2022",
+        "md5" : "978a04dbb4e1976d178d1902bf1a8b80"
+    },
+    "ben" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/ben.checkpoint.model.gz",
+        "info" : "A Bangla monolingual model trained on MOT data",
+        "description" : "monolingual-ben",
+        "destination" : "monolingual/ben/24.Aug.22.ben",
+        "date" : "24 August 2022",
+        "md5" : "34f34ea3936de016181cbb0699ff1592"
+    },
+    "bod" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/bod.checkpoint.model.gz",
+        "info" : "A Tibetan monolingual model trained on MOT data",
+        "description" : "monolingual-bod",
+        "destination" : "monolingual/bod/24.Aug.22.bod",
+        "date" : "24 August 2022",
+        "md5" : "2dee1f41c342b4ed7418efb93bb5b826"
+    },
+    "bos" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/bos.checkpoint.model.gz",
+        "info" : "A Bosnian monolingual model trained on MOT data",
+        "description" : "monolingual-bos",
+        "destination" : "monolingual/bos/24.Aug.22.bos",
+        "date" : "24 August 2022",
+        "md5" : "20125723046c4aca5005de7481677706"
+    },
+    "hat" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/hat.checkpoint.model.gz",
+        "info" : "A Hatian monolingual model trained on MOT data",
+        "description" : "monolingual-hat",
+        "destination" : "monolingual/hat/24.Aug.22.hat",
+        "date" : "24 August 2022",
+        "md5" : "180cb7f0d6500c5aae8c99f9cb880c7c"
+    },
+    "hau" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/hau.checkpoint.model.gz",
+        "info" : "A Hausa monolingual model trained on MOT data",
+        "description" : "monolingual-hau",
+        "destination" : "monolingual/hau/24.Aug.22.hau",
+        "date" : "24 August 2022",
+        "md5" : "d9ece8c1129878c0928caf940d631944"
+    },
+    "kat" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/kat.checkpoint.model.gz",
+        "info" : "A Georgian monolingual model trained on MOT data",
+        "description" : "monolingual-kat",
+        "destination" : "monolingual/kat/24.Aug.22.kat",
+        "date" : "24 August 2022",
+        "md5" : "bf3890fbb47000f6c77a3accfaa133fd"
+    },
+    "kin" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/kin.checkpoint.model.gz",
+        "info" : "A Kinyarwanda monolingual model trained on MOT data",
+        "description" : "monolingual-kin",
+        "destination" : "monolingual/kin/24.Aug.22.kin",
+        "date" : "24 August 2022",
+        "md5" : "d619869ff4dd6820bcbd8a05604af323"
+    },
+    "kur" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/kur.checkpoint.model.gz",
+        "info" : "A Kurdish monolingual model trained on MOT data",
+        "description" : "monolingual-kur",
+        "destination" : "monolingual/kur/24.Aug.22.kur",
+        "date" : "24 August 2022",
+        "md5" : "2f46779aeee149a75eb50871aebae196"
+    },
+    "lin" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/lin.checkpoint.model.gz",
+        "info" : "A Lingala monolingual model trained on MOT data",
+        "description" : "monolingual-lin",
+        "destination" : "monolingual/lin/24.Aug.22.lin",
+        "date" : "24 August 2022",
+        "md5" : "276319f2330228d5488e40c296a1f459"
+    },
+    "mkd" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/mkd.checkpoint.model.gz",
+        "info" : "A Macedonian monolingual model trained on MOT data",
+        "description" : "monolingual-mkd",
+        "destination" : "monolingual/mkd/24.Aug.22.mkd",
+        "date" : "24 August 2022",
+        "md5" : "9ea8ca8438d82dbfc8ca6ac50cffd719"
+    },
+    "nde" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/nde.checkpoint.model.gz",
+        "info" : "A Northern Ndebele monolingual model trained on MOT data",
+        "description" : "monolingual-nde",
+        "destination" : "monolingual/nde/24.Aug.22.nde",
+        "date" : "24 August 2022",
+        "md5" : "273111d3e9191eafe2fa3c1eaaddfd4b"
+    },
+    "orm" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/orm.checkpoint.model.gz",
+        "info" : "An Oromo monolingual model trained on MOT data",
+        "description" : "monolingual-orm",
+        "destination" : "monolingual/orm/24.Aug.22.orm",
+        "date" : "24 August 2022",
+        "md5" : "5ba705084aa5a7d32e62d70d50f058f9"
+    },
+    "sna" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/sna.checkpoint.model.gz",
+        "info" : "A Shona monolingual model trained on MOT data",
+        "description" : "monolingual-sna",
+        "destination" : "monolingual/sna/24.Aug.22.sna",
+        "date" : "24 August 2022",
+        "md5" : "5a9bb059ec485d38735d56c28e6f19c5"
+    },
+    "som" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/som.checkpoint.model.gz",
+        "info" : "A Somali monolingual model trained on MOT data",
+        "description" : "monolingual-som",
+        "destination" : "monolingual/som/24.Aug.22.som",
+        "date" : "24 August 2022",
+        "md5" : "33d654d06e5c9dbb921cbaf0aff87054"
+    },
+    "sqi" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/sqi.checkpoint.model.gz",
+        "info" : "A Albanian monolingual model trained on MOT data",
+        "description" : "monolingual-sqi",
+        "destination" : "monolingual/sqi/24.Aug.22.sqi",
+        "date" : "24 August 2022",
+        "md5" : "d056d116ca90ec93e063ac347e361d81"
+    },
+    "swh" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/swh.checkpoint.model.gz",
+        "info" : "A Swahili monolingual model trained on MOT data",
+        "description" : "monolingual-swh",
+        "destination" : "monolingual/swh/24.Aug.22.swh",
+        "date" : "24 August 2022",
+        "md5" : "2b265d9aaab725ec860c302e80613729"
+    },
+    "uzb" : {
+        "source" : "https://github.com/cpalenmichel/custom-ersatz-models/blob/main/uzb.checkpoint.model.gz",
+        "info" : "An Uzbek monolingual model trained on MOT data",
+        "description" : "monolingual-uzb",
+        "destination" : "monolingual/uzb/24.Aug.22.uzb",
+        "date" : "24 August 2022",
+        "md5" : "10bab1c9845b9dd827499c48e7551e56"
+    },
 }
 
 def list_models():
