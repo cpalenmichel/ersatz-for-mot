@@ -17,7 +17,6 @@ import re
 # U+002a *        ASTERISK
 # U+0049 I        LATIN CAPITAL I (used in Bengali as DEVANAGARI DANDA)
 # U+003a :        COLON (second most common in Georgian)
-# U+061F  ؟       ARABIC QUESTION MARK
 
 # other acceptable punctuation
 # U+3011  】  Pe  RIGHT BLACK LENTICULAR BRACKET
@@ -45,12 +44,25 @@ ending_punc = {
     '\uFF61',
     '\uFF0E',
     '\u2026',
+    '\u002a',
+}
+
+# Bangla, tibetan, georgian. Don't use with Roman scripts
+additional_ending_punc = {
+    '\u0964',
+    '\u0049',
+    '\u002E',
+    '\u3002',
+    '\u0021',
+    '\u06D4',
+    '\u17D4',
+    '\u003F',
+    '\uFF61',
+    '\uFF0E',
+    '\u003a',
     '\u0f0d',
     '\u0f0e',
     '\u002a',
-    '\u0049',
-    '\u003a',
-    '\u061F'
 }
 
 closing_punc = {
@@ -65,6 +77,7 @@ closing_punc = {
     '\u0027',
     '\u2019',
     '\u0029'
+    '\uff09'
 }
 
 list_set = {
@@ -110,6 +123,25 @@ class MultilingualPunctuation(Split):
         except:
             return False
         return False
+
+
+class AdditionalMultilingualPunctuation(Split):
+    def __call__(self, left_context, right_context):
+        try:
+            left_context = left_context.split(' ')[-1]
+            if right_context[0] not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+                for i, ch in enumerate(left_context):
+                    if ch in additional_ending_punc:
+                        for j, next_ch in enumerate(left_context[i:], i):
+                            if next_ch not in additional_ending_punc and next_ch not in closing_punc:
+                                j = -1
+                                break
+                        if j != -1:
+                            return True
+        except:
+            return False
+        return False
+
 
 class IndividualPunctuation(Split):
     def __init__(self, unicode_char):
